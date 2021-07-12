@@ -1,27 +1,22 @@
-# AngularInterviewTemplate
+# InterviewDemo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
-## Development server
+## Api Endpoint Examples
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project uses the RAWG API for data. Here are some examples:
 
-## Code scaffolding
+- `https://api.rawg.io/api/games?key=API_KEY` - Fetch all games
+- `https://api.rawg.io/api/games?key=API_KEY&page=2` - Fetch page 2 of games
+- `https://api.rawg.io/api/games?key=API_KEY&query=Portal` - Fetch games with Portal in the name
+- `https://api.rawg.io/api/games/${gameId}?key=API_KEY&query=Portal` - Fetch a game by id
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[Full RAWG API docs](https://api.rawg.io/docs/)
 
-## Build
+## Prior to Interview
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Clone project locally
+1. Ensure you have AngularCLI & Node > 10
+1. Run `npm i`
+1. Ensure project runs without errors using `npm run start`
+1. You can either get your own API key from [RAWG](https://rawg.io/apidocs) or one will be provided for you during the interview.
