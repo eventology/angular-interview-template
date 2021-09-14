@@ -12,7 +12,10 @@ const key = "c95ca9de0a4048918ca678918e43415b";
 export class RawgService {
   constructor(private http: HttpClient) {}
 
-  getGameList({ page = 1, search = "" }: { page?: number; search?: string }) {
+  getGameList({
+    page = 1,
+    search = "",
+  }: { page?: number; search?: string } = {}) {
     return this.http.get<RawgListResponse<RawgGame>>(`${BASE_URL}/games`, {
       params: { key, page, search },
     });
